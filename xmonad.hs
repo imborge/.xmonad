@@ -17,6 +17,8 @@ myLayout = Tall 1 (3/100) (1/2) ||| Grid ||| Full
 myKeybindings = [ ((myModMask .|. shiftMask, xK_q), kill)
                 , ((myModMask .|. shiftMask, xK_f), spawn myFileBrowser)
 
+                , ((myModMask, xK_p), spawn "dmenu_run -fn \"Iosevka Term-11\"")
+
                 -- Mute sound (toggle)
                 , ((myModMask, xK_F1), spawn "pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle")
                 -- Volume up
