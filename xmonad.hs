@@ -29,7 +29,7 @@ myKeybindings = [ ((myModMask .|. shiftMask, xK_q), kill)
 myUnbindKeys = [ (myModMask .|. shiftMask, xK_q) ]
 
 main = do
-  xmproc <- spawnPipe "xmobar"
+  xmproc <- spawnPipe "xmobar ~/.xmonad/.xmobarrc"
   xmonad $ def
     { manageHook         = manageDocks <+> manageHook defaultConfig
     , layoutHook         = smartBorders $ avoidStruts $ myLayout
