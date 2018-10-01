@@ -19,6 +19,8 @@ myKeybindings = [ ((myModMask .|. shiftMask, xK_q), kill)
 
                 , ((myModMask, xK_p), spawn "dmenu_run -fn \"Iosevka Term-11\"")
 
+                , ((myModMask, xK_Print), spawn "scrot")
+
                 -- Mute sound (toggle)
                 , ((myModMask, xK_F1), spawn "pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle")
                 -- Volume up
